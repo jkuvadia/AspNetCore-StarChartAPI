@@ -81,7 +81,7 @@ namespace StarChart.Controllers
             return NoContent();
         }
 
-        [HttpPatch("{id/name}")]
+        [HttpPatch("{id}/{name}}")]
         public IActionResult renameObject(int id, string name)
         {
 
@@ -94,7 +94,7 @@ namespace StarChart.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
 
